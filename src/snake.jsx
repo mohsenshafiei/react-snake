@@ -26,6 +26,7 @@ export const Snake = () => {
     setSpeed(null);
     setGameOver(true);
     setStarted(false);
+    setPause(false);
   };
 
   const pauseGame = () => {
@@ -84,6 +85,7 @@ export const Snake = () => {
     setSpeed(SPEED);
     setGameOver(false);
     setStarted(true);
+    setPause(false);
   };
 
   useEffect(() => {
@@ -99,7 +101,7 @@ export const Snake = () => {
   return (
     <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)} className={style.container}>
       <canvas
-        onClick={startGame}
+        onClick={isStarted ? pauseGame :startGame}
         className={style.game}
         ref={canvasRef}
         width={`${CANVAS_SIZE[0]}px`}
