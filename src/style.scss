@@ -1,0 +1,94 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #3097bf;
+}
+
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #e1cf79;
+  background-color: white;
+  border-radius: 5px;
+}
+
+
+.controller {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  bottom: 48px;
+}
+
+.start {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: green;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.end {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #e55437;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.pause {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #e1cf79;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.gameOver {
+  font-size: 48px;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: #e55437;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pauseGame {
+  font-size: 48px;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: #e1cf79;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
